@@ -1,0 +1,335 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Header */
+.btn-request{
+    background-color: #cc3333;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem 2rem;
+        display: inline-block;
+        border-radius: 10rem;
+        transition: all .2s;
+        position: relative;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+
+        /* change for the button element */
+        border: none;
+        cursor: pointer;
+}
+.btn-request:hover{
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-.5rem);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.btn-request::after{
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+}
+.btn-request:active, .btn-request:focus{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+.header-bg .display-4{
+    font-size:40px;
+    color: white;
+    font-weight: 400;
+}
+.header-bg{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)), url('../img/home-banner.jpg');
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 89%, 0 0);
+}
+.header-animation{
+    color: rgba(255, 255, 255, 0.753);
+    padding: 40px 0;
+    font-size: 30px;
+}
+/* Cursor */
+.txt-type > .txt {
+    border-right: 0.2rem solid #777;
+  }
+  .btn-text{
+    background-color: #cc3333;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: .5rem 2rem;
+        display: block;
+        width: 100%;
+        border-radius:5px;
+        transition: all .2s;
+        position: relative;
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+
+        /* change for the button element */
+        border: none;
+        cursor: pointer;
+    }
+    .btn-text:hover{
+        background-color: #cc3333;
+        color: #fff;
+        box-shadow: 0 10px 15px rgba(0,0,0, .15);
+        transform: translateY(-2px);
+    }
+    .btn-text:active{
+        box-shadow: 0 .5rem .5rem rgba(0,0,0, .15);
+        transform: translateY(0);
+    }
+    #about-us{
+        margin-top: 40px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        padding-left: 40px;
+    }
+    .card{
+        transition: all .2s;
+    }
+    .card-title{
+        background-color: #cc3333;
+        color: #fff;
+        border-radius: 3px;
+        padding: 10px 20px;
+    }
+.card:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+#counter-section{
+    margin-top: 40px;
+    background-image: linear-gradient(to right, rgba(0,0,0,.6), rgba(0, 0, 0, 0.6)), url('../img/counter-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+#counter-section p{
+    color: #cc3333;
+    font-size: 20px;
+}
+#projects, #clients, #reviews{
+    font-size: 50px!important;
+}
+.process-box{
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+.process-box img{
+    height: 100px;
+    width: 100px;
+}
+ 
+.testimonial-card{
+    min-height: 400px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.3);
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between;
+   
+  }
+  .text{
+    padding: 2.2em;
+    line-height: 1.7em;
+    position: relative;
+    font-size: 18px;
+  }
+  .image{
+    background-color:tomato;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background:no-repeat center/cover url('../img/user-1.png');
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content:center;
+    
+  }
+  
+  .footer{
+    background: linear-gradient(90deg, #cc3333 0%, #cc3333 100%);
+    height: 140px;
+    border-radius: 0 0 10px 10px;
+    position:relative;
+    
+  }
+  
+  .quote{
+    font-size: 400%;
+    float: right;
+    opacity: .1;
+    transform: rotate(10deg) translate(-10px, -40px);
+   color:#4D3FA3;
+  }
+  
+  .person{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size:1.5rem;
+    font-weight: 600;
+  }
+  #review-section{
+    clip-path: polygon(50% 0%, 100% 10%, 100% 60%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
+  }
+  #whatsapp-icon{
+      position: fixed;
+      top: 90%;
+      right: 10px;
+      z-index: 1000;
+  }
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 1s linear infinite;
+    -moz-animation: rotating 1s linear infinite;
+    -ms-animation: rotating 1s linear infinite;
+    -o-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+  }
+
+  .footer-main{
+    background-color: #eee;
+    padding: 100px 0;
+    font-size: 14px;
+    clip-path: polygon(50% 15%, 100% 0, 100% 100%, 75% 100%, 25% 100%, 0 100%, 0 0);
+    margin-top: -70px;
+  }
+  .footer__logo-box{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.footer__logo{
+    width: 150px;
+    height: auto;
+}
+.footer__navigation{
+    border-top: 1px solid #cc3333;
+    display: inline-block;
+}
+.footer__list{
+    list-style: none;
+}
+.footer__item{
+    display: inline-block;
+}
+.footer__item:not(:last-child){
+    margin-right: 15px;
+}
+.footer__link:link,.footer__link:visited{
+    color:#eee;
+    background-color: #cc3333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s;
+}
+.footer__link:hover,.footer__link:active{
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+    transform: rotate(-5deg) scale(1.2);
+}
+.footer__copyright{
+    color: #333;
+    border-top: 1px solid #cc3333;
+    display: inline-block;
+}
+
+/* mobile responsive */
+
+@media(max-width:576px){
+    .header-bg{
+        padding-top: 20px;
+    }
+    .header-bg .display-4{
+        font-size: 22px;
+    }
+    .header-animation{
+        font-size: 20px;
+    }
+    .header-bg h3{
+        font-size: 20px;
+    }
+    .header-bg .container{
+        text-align: center;
+    }
+    .header-bg .col-md-5{
+        padding-left: 30px;
+    }
+    #our-services .col-md-4{
+        padding-top: 20px;
+    }
+    #about-us .display-5{
+        padding-top: 20px;
+    }
+    #counter-section{
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+    }
+    #review-section .col-md-4{
+        padding-top: 20px;
+    }
+    #review-section{
+        clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 50% 100%, 0 100%, 0 0);
+    }
+    .footer-main{
+        padding: 10px;
+        clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+    }
+    .footer__item{
+        display:block;
+        padding: 20px;
+    }
+    .header-bg{
+        clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+    }
+}
